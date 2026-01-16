@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 13: File Handling | Ootu Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Lesson 13: File Handling in Java</h1>
+
+<p>File handling allows Java programs to read from and write data to files.</p>
+
+<h2>Writing to a File</h2>
+<pre><code>
+import java.io.FileWriter;
+
+FileWriter writer = new FileWriter("data.txt");
+writer.write("Hello Java");
+writer.close();
+</code></pre>
+
+<h2>Reading from a File</h2>
+<pre><code>
+import java.io.File;
+import java.util.Scanner;
+
+File file = new File("data.txt");
+Scanner sc = new Scanner(file);
+
+while(sc.hasNextLine()){
+    System.out.println(sc.nextLine());
+}
+sc.close();
+</code></pre>
+
+<h3>Task</h3>
+<p>Create a file, write your name into it, then read and display the content.</p>
+
+<a href="lesson-12.html">← Previous</a> |
+<a href="lesson-14.html">Next →</a>
+</body>
+</html>
