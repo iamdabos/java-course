@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 9: Inheritance & Polymorphism | Ootu Academy</title>
+  <meta name="description" content="Lesson 9 of Java Programming Course: Inheritance and Polymorphism" />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height:1.7; margin:0; padding:0; background:#f7f9fc; color:#222; }
+    header { background:#0f172a; color:#fff; padding:24px; }
+    header h1 { margin:0; font-size:28px; }
+    header p { margin-top:6px; opacity:0.9; }
+    main { max-width:960px; margin:auto; padding:24px; background:#fff; }
+    h2 { border-bottom:2px solid #e5e7eb; padding-bottom:6px; margin-top:40px; color:#0f172a; }
+    h3 { margin-top:28px; color:#1e293b; }
+    p { margin:12px 0; }
+    ul { margin:10px 0 20px 20px; }
+    li { margin-bottom:6px; }
+    code { background:#f1f5f9; padding:2px 6px; border-radius:4px; font-size:0.95em; }
+    pre { background:#020617; color:#e5e7eb; padding:16px; border-radius:8px; overflow-x:auto; }
+    .box { background:#f8fafc; border-left:4px solid #2563eb; padding:16px; margin:20px 0; }
+    .nav-buttons { margin-top:40px; display:flex; justify-content:space-between; }
+    .nav-buttons a { display:inline-block; padding:12px 20px; background:#2563eb; color:#fff; text-decoration:none; border-radius:6px; font-weight:bold; }
+    footer { text-align:center; padding:20px; background:#0f172a; color:#cbd5f5; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Java Programming Course</h1>
+  <p>Lesson 9: Inheritance & Polymorphism | Ootu Academy</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Lesson 9: Inheritance & Polymorphism</h2>
+
+    <h3>Inheritance in Java</h3>
+    <p>Inheritance allows one class (child) to acquire the properties and methods of another class (parent). It promotes code reuse and logical hierarchy.</p>
+
+    <pre><code>class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}</code></pre>
+
+    <h3>Using Inheritance</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.sound();
+    }
+}</code></pre>
+
+    <h3>Polymorphism</h3>
+    <p>Polymorphism allows a parent class reference to point to a child class object, enabling dynamic method behavior.</p>
+
+    <pre><code>Animal a = new Dog();
+a.sound(); // Calls Dog's sound()</code></pre>
+
+    <h3>Method Overriding</h3>
+    <p>Method overriding occurs when a subclass provides a specific implementation of a method already defined in its parent class.</p>
+
+    <ul>
+      <li>Method name must be the same</li>
+      <li>Parameters must be the same</li>
+      <li>Inheritance must exist</li>
+    </ul>
+
+    <div class="box">
+      <strong>Task:</strong>
+      <p>Create a base class <code>Shape</code> with a method <code>draw()</code>. Extend it into <code>Circle</code> and <code>Rectangle</code> classes and override the <code>draw()</code> method.</p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="lesson-8.html">← Previous Lesson</a>
+      <a href="lesson-10.html">Next Lesson →</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Ootu Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
