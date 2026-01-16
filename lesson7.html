@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 7: Methods & Arrays | Ootu Academy</title>
+  <meta name="description" content="Lesson 7 of Java Programming Course: Methods and Arrays" />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height:1.7; margin:0; padding:0; background:#f7f9fc; color:#222; }
+    header { background:#0f172a; color:#fff; padding:24px; }
+    header h1 { margin:0; font-size:28px; }
+    header p { margin-top:6px; opacity:0.9; }
+    main { max-width:960px; margin:auto; padding:24px; background:#fff; }
+    h2 { border-bottom:2px solid #e5e7eb; padding-bottom:6px; margin-top:40px; color:#0f172a; }
+    h3 { margin-top:28px; color:#1e293b; }
+    p { margin:12px 0; }
+    ul { margin:10px 0 20px 20px; }
+    li { margin-bottom:6px; }
+    code { background:#f1f5f9; padding:2px 6px; border-radius:4px; font-size:0.95em; }
+    pre { background:#020617; color:#e5e7eb; padding:16px; border-radius:8px; overflow-x:auto; }
+    .box { background:#f8fafc; border-left:4px solid #2563eb; padding:16px; margin:20px 0; }
+    .nav-buttons { margin-top:40px; display:flex; justify-content:space-between; }
+    .nav-buttons a { display:inline-block; padding:12px 20px; background:#2563eb; color:#fff; text-decoration:none; border-radius:6px; font-weight:bold; }
+    footer { text-align:center; padding:20px; background:#0f172a; color:#cbd5f5; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Java Programming Course</h1>
+  <p>Lesson 7: Methods & Arrays | Ootu Academy</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Lesson 7: Methods & Arrays</h2>
+
+    <h3>Methods in Java</h3>
+    <p>Methods are blocks of code that perform a specific task and can be reused throughout the program.</p>
+
+    <pre><code>public int add(int a, int b) {
+    return a + b;
+}
+
+int sum = add(5, 3);
+System.out.println(sum);  // Output: 8</code></pre>
+
+    <h3>Arrays in Java</h3>
+    <p>Arrays store multiple values of the same type in a single variable.</p>
+
+    <pre><code>int[] numbers = {1, 2, 3, 4, 5};
+for(int i = 0; i &lt; numbers.length; i++) {
+    System.out.println(numbers[i]);
+}</code></pre>
+
+    <h3>Enhanced For Loop</h3>
+    <p>Java provides a simpler way to iterate over arrays:</p>
+    <pre><code>for(int num : numbers) {
+    System.out.println(num);
+}</code></pre>
+
+    <div class="box">
+      <strong>Task:</strong>
+      <p>Create a method that multiplies two numbers. Store results in an array and print all the values using both standard and enhanced for loops.</p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="lesson-6.html">← Previous Lesson</a>
+      <a href="lesson-8.html">Next Lesson →</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Ootu Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
