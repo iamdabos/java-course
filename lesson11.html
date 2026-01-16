@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 11: Exception Handling | Ootu Academy</title>
+  <meta name="description" content="Lesson 11 of Java Programming Course: Exception Handling" />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height:1.7; margin:0; padding:0; background:#f7f9fc; color:#222; }
+    header { background:#0f172a; color:#fff; padding:24px; }
+    header h1 { margin:0; font-size:28px; }
+    header p { margin-top:6px; opacity:0.9; }
+    main { max-width:960px; margin:auto; padding:24px; background:#fff; }
+    h2 { border-bottom:2px solid #e5e7eb; padding-bottom:6px; margin-top:40px; color:#0f172a; }
+    h3 { margin-top:28px; color:#1e293b; }
+    p { margin:12px 0; }
+    ul { margin:10px 0 20px 20px; }
+    li { margin-bottom:6px; }
+    code { background:#f1f5f9; padding:2px 6px; border-radius:4px; font-size:0.95em; }
+    pre { background:#020617; color:#e5e7eb; padding:16px; border-radius:8px; overflow-x:auto; }
+    .box { background:#f8fafc; border-left:4px solid #2563eb; padding:16px; margin:20px 0; }
+    .nav-buttons { margin-top:40px; display:flex; justify-content:space-between; }
+    .nav-buttons a { display:inline-block; padding:12px 20px; background:#2563eb; color:#fff; text-decoration:none; border-radius:6px; font-weight:bold; }
+    footer { text-align:center; padding:20px; background:#0f172a; color:#cbd5f5; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Java Programming Course</h1>
+  <p>Lesson 11: Exception Handling | Ootu Academy</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Lesson 11: Exception Handling</h2>
+
+    <h3>What is an Exception?</h3>
+    <p>An exception is an event that disrupts the normal flow of a program during execution. Java provides a robust mechanism to handle runtime errors gracefully.</p>
+
+    <h3>Try-Catch Block</h3>
+    <pre><code>try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero");
+}</code></pre>
+
+    <h3>Finally Block</h3>
+    <p>The <code>finally</code> block always executes, whether an exception occurs or not.</p>
+
+    <pre><code>try {
+    int[] nums = {1, 2, 3};
+    System.out.println(nums[5]);
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Index out of bounds");
+} finally {
+    System.out.println("Execution completed");
+}</code></pre>
+
+    <h3>Checked vs Unchecked Exceptions</h3>
+    <ul>
+      <li><strong>Checked:</strong> Checked at compile time (e.g., IOException)</li>
+      <li><strong>Unchecked:</strong> Occur at runtime (e.g., NullPointerException)</li>
+    </ul>
+
+    <h3>Throw and Throws</h3>
+    <pre><code>void validateAge(int age) throws Exception {
+    if (age < 18) {
+        throw new Exception("Underage");
+    }
+}</code></pre>
+
+    <div class="box">
+      <strong>Task:</strong>
+      <p>Write a program that handles invalid user input using try-catch. Create a custom exception for invalid age.</p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="lesson-10.html">← Previous Lesson</a>
+      <a href="lesson-12.html">Next Lesson →</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Ootu Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
