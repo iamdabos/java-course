@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 14: Multithreading | Ootu Academy</title>
+</head>
+<body>
+<h1>Lesson 14: Multithreading in Java</h1>
+
+<p>Multithreading allows Java programs to execute multiple tasks simultaneously.</p>
+
+<h2>Creating a Thread</h2>
+<pre><code>
+class MyThread extends Thread {
+  public void run() {
+    System.out.println("Thread running");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    MyThread t = new MyThread();
+    t.start();
+  }
+}
+</code></pre>
+
+<h3>Task</h3>
+<p>Create two threads that print different messages.</p>
+
+<a href="lesson-13.html">← Previous</a> |
+<a href="lesson-15.html">Next →</a>
+</body>
+</html>
