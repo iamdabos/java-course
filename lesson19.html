@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 19: Memory Management | Ootu Academy</title>
+</head>
+<body>
+<h1>Lesson 19: Java Memory Management</h1>
+
+<h2>1. Stack vs Heap</h2>
+<p>
+- <strong>Stack:</strong> Stores primitive variables and references. Fast, automatically managed.  
+- <strong>Heap:</strong> Stores objects. Managed by Garbage Collector.
+</p>
+
+<h2>2. Object Lifecycle</h2>
+<ul>
+  <li>Creation with <code>new</code></li>
+  <li>Reachability & references</li>
+  <li>Eligible for garbage collection when no references exist</li>
+</ul>
+
+<h2>3. Garbage Collection (GC)</h2>
+<p>Java automatically cleans up unused objects using GC.</p>
+<pre><code>
+MyClass obj = new MyClass();
+obj = null; // eligible for GC
+System.gc(); // request GC
+</code></pre>
+
+<h2>4. Common Issues</h2>
+<ul>
+  <li>Memory leaks via lingering references</li>
+  <li>Excessive object creation in loops</li>
+  <li>Large collections not cleared</li>
+</ul>
+
+<h3>Task</h3>
+<p>Write a program creating multiple objects and nullify references to see GC in action (use <code>System.gc()</code>).</p>
+
+<a href="lesson-18.html">← Previous</a> |
+<a href="#">End of Course</a>
+</body>
+</html>
