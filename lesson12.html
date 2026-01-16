@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 12: Collections Framework | Ootu Academy</title>
+  <meta name="description" content="Lesson 12 of Java Programming Course: Collections Framework" />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height:1.7; margin:0; padding:0; background:#f7f9fc; color:#222; }
+    header { background:#0f172a; color:#fff; padding:24px; }
+    header h1 { margin:0; font-size:28px; }
+    header p { margin-top:6px; opacity:0.9; }
+    main { max-width:960px; margin:auto; padding:24px; background:#fff; }
+    h2 { border-bottom:2px solid #e5e7eb; padding-bottom:6px; margin-top:40px; color:#0f172a; }
+    h3 { margin-top:28px; color:#1e293b; }
+    p { margin:12px 0; }
+    ul { margin:10px 0 20px 20px; }
+    li { margin-bottom:6px; }
+    code { background:#f1f5f9; padding:2px 6px; border-radius:4px; font-size:0.95em; }
+    pre { background:#020617; color:#e5e7eb; padding:16px; border-radius:8px; overflow-x:auto; }
+    .box { background:#f8fafc; border-left:4px solid #2563eb; padding:16px; margin:20px 0; }
+    .nav-buttons { margin-top:40px; display:flex; justify-content:space-between; }
+    .nav-buttons a { display:inline-block; padding:12px 20px; background:#2563eb; color:#fff; text-decoration:none; border-radius:6px; font-weight:bold; }
+    footer { text-align:center; padding:20px; background:#0f172a; color:#cbd5f5; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Java Programming Course</h1>
+  <p>Lesson 12: Collections Framework | Ootu Academy</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Lesson 12: Java Collections Framework</h2>
+
+    <h3>What is the Collections Framework?</h3>
+    <p>The Java Collections Framework provides a set of classes and interfaces to store, manage, and manipulate groups of objects efficiently.</p>
+
+    <h3>Core Interfaces</h3>
+    <ul>
+      <li><strong>List:</strong> Ordered collection that allows duplicates</li>
+      <li><strong>Set:</strong> Unordered collection that does not allow duplicates</li>
+      <li><strong>Map:</strong> Stores key-value pairs</li>
+    </ul>
+
+    <h3>List Example (ArrayList)</h3>
+    <pre><code>import java.util.ArrayList;
+
+ArrayList<String> names = new ArrayList<>();
+names.add("Alice");
+names.add("Bob");
+
+for(String name : names) {
+    System.out.println(name);
+}</code></pre>
+
+    <h3>Set Example (HashSet)</h3>
+    <pre><code>import java.util.HashSet;
+
+HashSet<Integer> numbers = new HashSet<>();
+numbers.add(1);
+numbers.add(2);
+numbers.add(2); // Duplicate ignored
+
+System.out.println(numbers);</code></pre>
+
+    <h3>Map Example (HashMap)</h3>
+    <pre><code>import java.util.HashMap;
+
+HashMap<String, Integer> scores = new HashMap<>();
+scores.put("John", 90);
+scores.put("Jane", 85);
+
+System.out.println(scores.get("John"));</code></pre>
+
+    <h3>When to Use What?</h3>
+    <ul>
+      <li>Use <code>List</code> when order matters</li>
+      <li>Use <code>Set</code> when uniqueness matters</li>
+      <li>Use <code>Map</code> when mapping keys to values</li>
+    </ul>
+
+    <div class="box">
+      <strong>Task:</strong>
+      <p>Create a program that stores student names in a List, unique course names in a Set, and student scores in a Map. Display all values.</p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="lesson-11.html">← Previous Lesson</a>
+      <a href="lesson-13.html">Next Lesson →</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Ootu Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
