@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 21: JDBC | Ootu Academy</title>
+</head>
+<body>
+<h1>Lesson 21: JDBC (Java Database Connectivity)</h1>
+
+<p>JDBC allows Java programs to connect to databases and perform CRUD operations.</p>
+
+<h2>Key Concepts</h2>
+<ul>
+  <li>Connection, Statement, PreparedStatement, CallableStatement</li>
+  <li>Transactions and rollback</li>
+  <li>ResultSet and metadata</li>
+</ul>
+
+<pre><code>
+// Example JDBC connection
+Connection con = DriverManager.getConnection(
+"jdbc:mysql://localhost:3306/testdb","root","");
+Statement stmt = con.createStatement();
+ResultSet rs = stmt.executeQuery("SELECT * FROM students");
+while(rs.next()){
+    System.out.println(rs.getString("name"));
+}
+con.close();
+</code></pre>
+
+<h3>Task</h3>
+<p>Create a Java program that connects to a database and retrieves a list of students.</p>
+
+<div class="nav-buttons">
+  <a href="lesson-20.html">← Previous Lesson</a>
+  <a href="lesson-22.html">Next Lesson →</a>
+</div>
+</body>
+</html>
