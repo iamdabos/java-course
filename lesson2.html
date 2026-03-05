@@ -34,45 +34,111 @@
 <main>
 
   <section>
-    <h2>Lesson 2: Java Development Environment</h2>
 
-    <h3>Understanding JDK, JRE, and JVM</h3>
-    <p>To work with Java, it is important to understand its core components:</p>
-    <ul>
-      <li><strong>JDK (Java Development Kit):</strong> Tools needed to write and compile Java programs.</li>
-      <li><strong>JRE (Java Runtime Environment):</strong> Environment required to run Java programs.</li>
-      <li><strong>JVM (Java Virtual Machine):</strong> Executes Java bytecode on the host machine.</li>
-    </ul>
+<h2>Lesson 2: Java Development Environment</h2>
 
-    <h3>Installing Java</h3>
-    <p>
-      Java can be installed by downloading the JDK from Oracle or OpenJDK. After installation, you can verify the
-      setup using the <code>java -version</code> command in the terminal or command prompt.
-    </p>
+<h3>Introduction</h3>
+<p>
+Before writing and running Java programs, developers must first set up a proper Java development environment.
+The Java ecosystem includes several important components that allow programmers to write, compile, and execute
+Java applications.
+</p>
 
-    <h3>Setting up an IDE</h3>
-    <p>
-      Integrated Development Environments (IDEs) make coding easier. Popular Java IDEs include:
-    </p>
-    <ul>
-      <li>IntelliJ IDEA</li>
-      <li>Eclipse</li>
-      <li>VS Code with Java extensions</li>
-    </ul>
-    <p>They provide features like code completion, debugging, and project management.</p>
+<p>
+Understanding how these components interact is essential for every Java developer. In this lesson we explore the
+three core parts of the Java environment: JDK, JRE, and JVM. We will also learn how to install Java and configure
+a development environment using popular Integrated Development Environments (IDEs).
+</p>
 
-    <div class="box">
-      <strong>Task:</strong>
-      <p>Install the JDK on your system, set up an IDE, and run the <code>java -version</code> command to confirm the installation.</p>
-    </div>
+<h3>Understanding JDK, JRE, and JVM</h3>
+<p>
+Java programs rely on three main components that form the foundation of the Java platform. Each component
+plays a specific role in the development and execution of Java applications.
+</p>
 
-    <div class="nav-buttons">
-      <a href="index.html">← Previous Lesson</a>
-      <a href="lesson3.html">Next Lesson →</a>
-    </div>
+<h4>JDK (Java Development Kit)</h4>
+<p>
+The Java Development Kit is the complete toolkit used by developers to build Java applications. It contains
+tools needed to write, compile, debug, and package Java programs.
+</p>
 
-  </section>
+<ul>
+<li>javac – the Java compiler</li>
+<li>java – command used to run programs</li>
+<li>javadoc – generates documentation</li>
+<li>jar – packages Java files</li>
+</ul>
 
+<p>
+The JDK also includes the Java Runtime Environment (JRE), meaning it provides everything necessary to both
+develop and run Java programs.
+</p>
+
+<h4>JRE (Java Runtime Environment)</h4>
+<p>
+The Java Runtime Environment provides the environment required to run Java applications. It contains the
+libraries and files needed by the Java Virtual Machine to execute programs.
+</p>
+
+<p>
+Unlike the JDK, the JRE does not include development tools such as the compiler. It is designed for users
+who only need to run Java applications.
+</p>
+
+<h4>JVM (Java Virtual Machine)</h4>
+<p>
+The Java Virtual Machine is responsible for executing Java bytecode. When a Java program is compiled,
+it is converted into bytecode rather than machine code.
+</p>
+
+<p>
+The JVM reads this bytecode and converts it into instructions that the computer can execute. This process
+allows Java programs to run on different operating systems without modification.
+</p>
+
+<h3>Installing Java</h3>
+<p>
+Before writing Java programs, the Java Development Kit must be installed. Java can be downloaded from
+Oracle or through OpenJDK distributions.
+</p>
+
+<ol>
+<li>Visit the official Java download website</li>
+<li>Download the JDK for your operating system</li>
+<li>Run the installer and follow the instructions</li>
+<li>Complete installation</li>
+</ol>
+
+<p>After installation you can verify the setup using the command:</p>
+
+<pre><code>java -version</code></pre>
+
+<p>
+If Java is installed correctly, the terminal will display the installed version of Java.
+</p>
+
+<h3>Setting up an IDE</h3>
+<p>
+Integrated Development Environments (IDEs) help developers write and manage code more efficiently.
+They provide tools such as code completion, debugging features, and project management.
+</p>
+
+<h4>Popular Java IDEs</h4>
+
+<ul>
+<li>IntelliJ IDEA</li>
+<li>Eclipse</li>
+<li>Visual Studio Code with Java extensions</li>
+</ul>
+
+<p>
+Choosing a good IDE can significantly improve productivity when developing Java applications.
+</p>
+
+<strong>Task:</strong>
+<p>Install the Java JDK on your computer and verify the installation using the java -version command.</p>
+
+</section>
 </main>
 
 <footer>
